@@ -15,6 +15,14 @@ class coleslaw
     private $fridge;
 
 
+    /**
+     * coleslaw::cut()
+     * 
+     * @param mixed $ingredients
+     * @param mixed $level
+     * @param mixed $speed
+     * @return
+     */
     protected function cut($ingredients, $level, $speed)
     {
 
@@ -29,23 +37,52 @@ class coleslaw
     }
 
 
+    /**
+     * coleslaw::stir()
+     * 
+     * @param integer $speed
+     * @param mixed $input
+     * @param mixed $container
+     * @return
+     */
     protected function stir($speed = 1, $input, $container)
     {
         return true;
     }
 
+    /**
+     * coleslaw::fill()
+     * 
+     * @param integer $speed
+     * @param mixed $input
+     * @param mixed $container
+     * @return
+     */
     protected function fill($speed = 1, $input, $container)
     {
         return true;
     }
 
 
+    /**
+     * coleslaw::quirl()
+     * 
+     * @param integer $speed
+     * @param mixed $input
+     * @return
+     */
     protected function quirl($speed = 1, $input)
     {
         return true;
     }
 
 
+    /**
+     * coleslaw::prepare()
+     * 
+     * @param mixed $ingredients
+     * @return
+     */
     protected function prepare($ingredients)
     {
 
@@ -58,6 +95,12 @@ class coleslaw
         return $bowl;
 
     }
+    /**
+     * coleslaw::admix()
+     * 
+     * @param mixed $ingredients
+     * @return
+     */
     protected function admix($ingredients)
     {
 
@@ -70,6 +113,13 @@ class coleslaw
         return $bowl;
     }
 
+    /**
+     * coleslaw::flavor()
+     * 
+     * @param mixed $input
+     * @param mixed $level
+     * @return
+     */
     public function flavor($input, $level)
     {
         
@@ -78,6 +128,11 @@ class coleslaw
     }
 
 
+    /**
+     * coleslaw::__construct()
+     * 
+     * @return
+     */
     public function __construct()
     {
 
@@ -92,6 +147,12 @@ class coleslaw
     }
 
 
+    /**
+     * coleslaw::initializeReciept()
+     * 
+     * @param integer $size
+     * @return
+     */
     public function initializeReciept($size = 1)
     {
 
@@ -112,6 +173,11 @@ class coleslaw
 
     }
 
+    /**
+     * coleslaw::__destruct()
+     * 
+     * @return
+     */
     public function __destruct()
     {
 
@@ -119,6 +185,13 @@ class coleslaw
 
 
 }
+
+
+
+$ColeSlaw = new coleslaw();
+
+
+
 
 
 ?>
