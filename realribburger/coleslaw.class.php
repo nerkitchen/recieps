@@ -6,7 +6,16 @@
  */
 
 
-class coleslaw
+/**
+ * coleslaw
+ * 
+ * @package   
+ * @author nerdkitchen
+ * @copyright Tino Jahnke
+ * @version 2017
+ * @access public
+ */
+class coleslaw extends vegetables
 {
 
 
